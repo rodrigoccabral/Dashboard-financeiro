@@ -8,23 +8,23 @@
     <title>Login</title>
 </head>
 <body>
-<div>teste</div>
-    <div id="container">
+        <div id="error"></div>
         <div id="formulario">
             <h1>Login</h1>
-            <form id="login-window" action="initial.html" method="GET">
-                <div id="user-name">
-                    <input class="input" placeholder="User" id="user-input" type="text">
+            <form id="form" action="initial.html" method="GET">
+
+                <div id="div-email">
+                    <input name="email" class="input" placeholder="Email" id="email" type="text" required>
                 </div>
-                <div id="password">
-                    <input class="input" placeholder="Password" id="user-password" type="password">
+                <div id="div-password">
+                    <input name="password" class="input" placeholder="Password" id="password" type="password" required>
                 </div>
                 <div id="submit-btn">
-                    <button id="input-btn" type="submit">Submit</button>
+                    <button class="button" id="input-btn" type="submit">Submit</button>
                 </div>
             </form>            
         </div>
-    </div>
+
     
     
 <script src="javascript.js"></script>
