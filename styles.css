@@ -60,6 +60,9 @@ body {
     border-bottom: 1px solid #cec6c6;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
+.input:focus {
+    background-color: rgb(245, 237, 237);
+}
 #input-btn {
     width: 205px;
     background-color: rgb(127, 175, 175);

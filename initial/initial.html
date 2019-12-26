@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Initial</title>
+    <link rel="stylesheet" href="initialstyles.css">
+</head>
+<body>
+  
+    <div id="header">
+        <div id="avatar"><img src=" "></div>
+    </div>
+
+
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a></span><i class="material-icons">&#36;</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp; about</span></a><br>
+        <a><i class="material-icons">&#163;</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp; services</a></span>
+        </a><br>
+        <a><i class="material-icons">&#8364;</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp; clients</span></a><br>
+        <a><i class="material-icons">&#165;</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp; contact<span></a>
+    </div>
+
+    <div id="main">
+
+    </div>
+
+
+           <!--Carrossel-->
+    <div id="controle">
+           <div class="slideshow-container">
+
+            <div class="mySlides"> 
+                <div class="grafico" id="piechart"></div>
+            </div>
+
+            <div class="mySlides"> 
+                <div class="grafico" id="columnchart_values"></div>
+            </div>
+
+
+
+            <!--Botão pra frente e pra trás-->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Pontos e circulos-->
+
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            
+            </div>
+        </div>
+   
+    </div>
+
+
+    <form id="forminitial" action="/index.html">
+    <button>Back</button>
+    </form>
+
+
+<script src="initialjavascript.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript" src="initialjavascript.js"></script>
+
+
+</body>
+</html>
