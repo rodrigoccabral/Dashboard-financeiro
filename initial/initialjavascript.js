@@ -113,3 +113,8 @@ function toggleSidebar() {
         this.mini = true;
     }
 }
+
+//------------CONVERSAO DE MOEDA TESTE-------------//
+
+
+//------------FIM DA CONVERSAO DE MOEDA TESTE------//

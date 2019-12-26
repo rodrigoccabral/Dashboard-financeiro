@@ -1,1 +1,0 @@
-Este é um projeto de dashboard para controle financeiro para ser utilizado no meu portfolio.
