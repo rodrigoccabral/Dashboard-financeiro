@@ -195,22 +195,23 @@ body {
 #dinheiro li {
     background: red;
     margin: 5px;
-    width: 280px;
+    width: 290px;
     height: 128px;
     display: table-cell;
     padding: 15px;
     list-style-position: inside;
+    border-radius: 2%;
 }
 
 /*---------FIM DA CONVERSAO DE MOEDA----*/
-    #grafico-longo {
-        background: rgb(161, 173, 173);
-        padding: 0px 0px 0px 32px;
-        display: flex;
-        flex-direction: row;
-        margin-top: -25px;
-        position: relative;
-    }
+#grafico-longo {
+    background: transparent;
+    padding: 0px 0px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -92px;
+    position: relative;
+}
 #grafico-longo ul {
     display: table;
     padding: 15px;
@@ -218,11 +219,34 @@ body {
 }
 #grafico-longo li {
     height: 225px;
-    width: 1197px;
+    width: 1215px;
     background-color: red;
     margin: 5px;
     display: table-cell;
     padding: 15px;
     list-style-position: inside;
     border-spacing: 20px;
+    border-radius: .8%;
+}
+
+/*------------Div balancete--------------*/
+
+.balancete {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.balancete ul {
+    position: absolute;
+    display: table;
+
+}
+
+.balancete li {
+    background-color: red;
+    width: 197px;
+    height: 148px;
+    display: table-cell;
+    list-style-type: none;
 }
