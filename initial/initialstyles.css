@@ -4,11 +4,12 @@ body {
     height: 100%;
     max-width: 100%;
     background-color: rgb(127, 175, 175);
+    -webkit-font-smoothing: antialiased;
 }
 #forminitial {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    right: 10px;
 }
 #piechart {
     border-radius: 6%;
@@ -112,44 +113,41 @@ body {
  
   .sidebar {
     height: 100%;
-    width: 75px;
+    width: 50px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: -26px;
     left: 0;
-    background-color: #111;
+    background-color: rgb(127, 175, 175);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     white-space: nowrap;
 }
-
-.sidebar a {
-    padding: 8px 20px 8px 28px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+.icon-text {
+    display: flex;
+    width: 252px;
+    height: 48px;
 }
 
-.sidebar a:hover {
-    color: #f1f1f1;
+.icon-text button {
+    display: flex;
+    left: 0;
+    width: 270px;
+    height: 48px;
+    cursor: pointer;
+    background-color: rgb(127, 175, 175);
+    border: none;
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+    font-size: 13px;
+    color: white;
+    margin: 7px 38px 5px -45px;
+    padding-left: 46px;
 }
 
-.sidebar .closebtn {
-    position: relative;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.material-icons {
-    padding: 20 20 20 20;
-    vertical-align: right;
-    font-size: 60px;
-    width: 40px;
+.icon-text button:hover {
+    background-color: rgb(76, 138, 138);
+    transition: 0.6s;
 }
 
 #main {
@@ -157,34 +155,98 @@ body {
     padding: 16px;
     margin-left: 100px;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-    .sidebar a {
-        font-size: 18px;
-    }
-}
 
 #header {
-    height: 50px;
+    height: 64px;
     width: 100%;
-    background-color: rgb(175, 122, 23);
+    background-color: rgb(255, 255, 255);
     top: 0;
+    position: fixed;
 }
 #avatar {
-    height: 50px;
+    height: 50px;   
     width: 50px;
     border-radius: 25px;
     background-color: grey;
-    margin-left: 1200px;
+    right: 10px;
+    top: 5px;
+    position: fixed;
+}
+#container-tela {
+    transition: initial;
+    transition: 0.6s;
 }
 
-/*Div reservada para a inserção de foto ou avatar*/
-#avatar img {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
+/*---------CONVERSAO DE MOEDA-----------*/
+
+#dinheiro {
+    background: rgb(161, 173, 173);
+    padding: 0px 0px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -25px;
+    position: relative;
+}
+#dinheiro ul {
+    display: table;
+    padding: 15px;
+    border-spacing: 20px;
+}
+#dinheiro li {
+    background: red;
+    margin: 5px;
+    width: 290px;
+    height: 128px;
+    display: table-cell;
+    padding: 15px;
+    list-style-position: inside;
+    border-radius: 2%;
+}
+
+/*---------FIM DA CONVERSAO DE MOEDA----*/
+#grafico-longo {
+    background: transparent;
+    padding: 0px 0px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -92px;
+    position: relative;
+}
+#grafico-longo ul {
+    display: table;
+    padding: 15px;
+    border-spacing: 20px;
+}
+#grafico-longo li {
+    height: 225px;
+    width: 1215px;
+    background-color: red;
+    margin: 5px;
+    display: table-cell;
+    padding: 15px;
+    list-style-position: inside;
+    border-spacing: 20px;
+    border-radius: .8%;
+}
+
+/*------------Div balancete--------------*/
+
+.balancete {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.balancete ul {
+    position: absolute;
+    display: table;
+
+}
+
+.balancete li {
+    background-color: red;
+    width: 197px;
+    height: 148px;
+    display: table-cell;
+    list-style-type: none;
 }
