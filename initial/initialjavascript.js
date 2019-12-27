@@ -1,6 +1,6 @@
 //---------------Controle do piechart-----------------//
 
-google.charts.load('current', {'packages':['corechart']});
+/*google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
@@ -95,7 +95,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 
-}
+}*/
 
 //-----------------Expandable sidebar--------------------//
 
@@ -103,13 +103,13 @@ var mini = true;
 function toggleSidebar() {
     if (mini) {
         console.log("opening sidebar");
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidebar").style.width = "252px";
+        document.getElementById("container-tela").style.marginLeft = "252px";
         this.mini = false;
     } else {
         console.log("closing sidebar");
-        document.getElementById("mySidebar").style.width = "85px";
-        document.getElementById("main").style.marginLeft = "85px";
+        document.getElementById("mySidebar").style.width = "48px";
+        document.getElementById("container-tela").style.marginLeft = "48px";
         this.mini = true;
     }
 }
@@ -118,3 +118,4 @@ function toggleSidebar() {
 
 
 //------------FIM DA CONVERSAO DE MOEDA TESTE------//
+

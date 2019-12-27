@@ -9,21 +9,42 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
 </head>
 <body>
-  
-    <div id="header">
-        <div id="avatar"><img src=" "></div>
-    </div>
-
 
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-        <a></span><i class="material-icons">&#36;</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp; Ganhos</span></a><br>
-        <a><i class="material-icons">&#8595;</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp; Despesas</a></span>
-        </a><br>
-        <a><i class="material-icons">&#36;</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp; Total poupado</span></a><br>
-        <a><i class="material-icons">&#165;</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp; contact<span></a>
+        <ul>
+            <li class="icon-text"><button>Ganhos</button></li>
+            <li class="icon-text"><button>Despesas</button></li>
+            <li class="icon-text"><button>Total poupado</button></li>
+            <li class="icon-text"><button>Contact</button></li>
+        </ul>
+
     </div>
+<!--Todos os itens da tela devem ser inseridos nesta div para serem resizeable quando o sidebar-->
+    <div id="container-tela">
+        <br>
+        <br>
+        <br>
+        <div id="dinheiro">
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+            </ul>
+        </div>
+        
+        
+        <br>
 
-
+            <div id="grafico-longo">
+                <ul>
+                    <li>Gráfico longo</li>                   
+                </ul>
+            </div>
+            <div id="header">
+                <div id="avatar"></div>
+            </div>
+    </div>
 
 <!----------------CONVERSAO DE MOEDA TESTE------------------>
 
@@ -32,12 +53,7 @@
 <!----------------FIM DA CONVERSAO DE MOEDA TESTE------------>
 
 
-    <div id="main">
-
-    </div>
-
-
-           <!--Carrossel-->
+           <!--Carrossel-
     <div id="controle">
            <div class="slideshow-container">
 
@@ -51,12 +67,12 @@
 
 
 
-            <!--Botão pra frente e pra trás-->
+            Botão pra frente e pra trás
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <!--Pontos e circulos-->
+            Pontos e circulos
 
             <div style="text-align: center">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -66,6 +82,7 @@
         </div>
    
     </div>
+-->
 
 
     <form id="forminitial" action="/index.html">
