@@ -12,12 +12,37 @@
 
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
         <ul>
-            <li class="icon-text"><button>Ganhos</button></li>
-            <li class="icon-text"><button>Despesas</button></li>
-            <li class="icon-text"><button>Total poupado</button></li>
-            <li class="icon-text"><button>Contact</button></li>
-        </ul>
+            <ul id="myUL">
+                <li><button class="caret">Dashboards &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
+                    <ul class="nested">
+                        <li>Analytics</li>
+                        <li>General</li>
+                        <li>Sales</li>
+                        <li>Classic</li>
+                        <li>Server</li>
+                        <li>Social</li>
+                        <li>Widgets</li>
+                        <li>Draggable</li>                   
+                    </ul>      
 
+                     <il><button class="caret">Email &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
+                        <ul class="nested">
+                            <li>Inbox</li>
+                            <li>Trash</li>
+                            <li>Sent</li>                 
+                        </ul>  
+                        <li class="icon-text"><button>GitHub</button></li>
+                        <li class="icon-text"><button>Calendar</button></li>
+                        <il><button class="caret">Layout &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
+                            <ul class="nested">
+                                <li>Standard Page</li>
+                                <li>Non Scrolling Page</li>
+                                <li>Full Width Layout</li>   
+                                <li>Icon Menu</li>  
+                                <li>Tall Toolbar with background</li>
+                                <li>Composer</li>                  
+                            </ul> 
+        </ul>
     </div>
 <!--Todos os itens da tela devem ser inseridos nesta div para serem resizeable quando o sidebar-->
     <div id="container-tela">
@@ -65,6 +90,9 @@
 
             <div id="header">
                 <div id="avatar"></div>
+                <img id="header-bell" src="imagens2/bell.png" alt="bell">
+                <img id="header-letter" src="imagens2/letter.png" alt="letter">
+                <img id="header-lingua" src="imagens2/lingua.jpg" alt="lingua">
             </div>
     </div>
 
@@ -107,15 +135,18 @@
 -->
 
 
-   <!-- <form id="forminitial" action="/index.html">
-    <button>Back</button>
-    </form>-->
+    <!--<button id="forminitial">Back</button>
+    <script type="text/javascript">
+        document.getElementById("forminitial").onclick = function () {
+            location.href = "/index.html";
+        };
+    </script>-->
 
 
 <script src="initialjavascript.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script type="text/javascript" src="initialjavascript.js"></script>
+<script type="text/javascript" src="/initialjavascript.js"></script>
 
 
 </body>

@@ -2,10 +2,31 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    max-width: 100%;
+    max-width: 98%;
     background-color: white;
     -webkit-font-smoothing: antialiased;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+body::-webkit-scrollbar-track {
+    background: rgb(202, 219, 221);
+  }
+   
+  /* Handle */
+body::-webkit-scrollbar-thumb {
+    background: rgb(155, 168, 172); 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
 #forminitial {
     position: absolute;
     bottom: 10px;
@@ -116,7 +137,7 @@ body {
     width: 50px;
     position: fixed;
     z-index: 1;
-    top: -26px;
+    top: 64px;
     left: 0;
     background-color: rgb(0,188,212);
     overflow-x: hidden;
@@ -124,10 +145,31 @@ body {
     padding-top: 60px;
     white-space: nowrap;
 }
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+  }
+  /* Track */
+  .sidebar::-webkit-scrollbar-track {
+    background: rgb(109, 175, 184);
+  }
+   
+  /* Handle */
+  .sidebar::-webkit-scrollbar-thumb {
+    background: rgb(35, 116, 141); 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .icon-text {
     display: flex;
     width: 252px;
     height: 48px;
+    user-select: none; /* Prevent text selection */
 }
 
 .icon-text button {
@@ -136,13 +178,13 @@ body {
     width: 270px;
     height: 48px;
     cursor: pointer;
-    background-color: rgb(0,188,212);
     border: none;
     font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
     font-size: 13px;
-    color: white;
-    margin: 7px 38px 5px -45px;
+    background-color: rgb(0,188,212);
+    margin: -4px 0px 0px -45px;
     padding-left: 46px;
+    color: white;
 }
 
 .icon-text button:hover {
@@ -158,20 +200,48 @@ body {
 
 #header {
     height: 64px;
-    width: 100%;
+    width: 101%;
     background-color: rgb(255, 255, 255);
     top: 0;
     position: fixed;
     box-shadow: 0 4px 2px -2px gray;
 }
 #avatar {
-    height: 50px;   
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border-radius: 25px;
     background-color: grey;
-    right: 10px;
-    top: 5px;
+    right: 69px;
+    top: 18px;
     position: fixed;
+    cursor: pointer;
+}
+#header-bell {
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    right: 123px;
+    top: 17px;
+    position: fixed;
+    cursor: pointer;
+}
+#header-letter {
+    height: 24px;
+    width: 43px;
+    border-radius: 25px;
+    right: 172px;
+    top: 20px;
+    position: fixed;
+    cursor: pointer;
+}
+#header-lingua {
+    height: 20px;
+    width: 18px;
+    border-radius: 25px;
+    right: 237px;
+    top: 21px;
+    position: fixed;
+    cursor: pointer;
 }
 #container-tela {
     transition: initial;
@@ -345,3 +415,81 @@ body {
     border-radius: 2%;
     box-shadow: 0 4px 2px -2px gray;
 }
+
+
+
+/* Remove default bullets */
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: -76px 10px 10px 4px;
+    padding: 5px 10px 10px 1px;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    user-select: none;
+    background-color: rgb(0,188,212);
+    display: flex;
+    left: 0;
+    width: 270px;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+    font-size: 13px;
+    color: white;
+    margin: -5px 38px 5px -45px;
+    padding: 15px 10px 10px 46px;
+  }
+
+ 
+  .caret:hover {
+    background-color: rgb(89, 144, 151);
+    transition: 0.6s;
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {  
+    background-color: rgb(0,188,212);
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+    background-color: rgb(0,188,212);
+    padding: 0px 20px 21px 3px;
+
+  }
+  .nested li {
+    margin: -4px 38px 5px -61px;
+    padding: 16px 100px 17px 60px;
+    display: flex;
+    width: 311px;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+    font-size: 13px;
+    color: white;
+  }
+  .nested li:hover {
+    background-color: rgb(89, 144, 151);
+    transition: 0.6s;
+    cursor: pointer
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }     
