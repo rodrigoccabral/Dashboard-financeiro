@@ -105,11 +105,12 @@ function toggleSidebar() {
         console.log("opening sidebar");
         document.getElementById("mySidebar").style.width = "252px";
         document.getElementById("container-tela").style.marginLeft = "252px";
+
         this.mini = false;
     } else {
         console.log("closing sidebar");
-        document.getElementById("mySidebar").style.width = "48px";
-        document.getElementById("container-tela").style.marginLeft = "48px";
+        document.getElementById("mySidebar").style.width = "50px";
+        document.getElementById("container-tela").style.marginLeft = "0px";
         this.mini = true;
     }
 }

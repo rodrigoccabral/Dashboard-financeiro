@@ -176,6 +176,7 @@ body {
 #container-tela {
     transition: initial;
     transition: 0.6s;
+    
 }
 
 /*---------CONVERSAO DE MOEDA-----------*/
@@ -235,25 +236,24 @@ body {
 /*------------Div balancete--------------*/
 
 #balancete {
-    position: relative;
+    background: transparent;
     display: flex;
     flex-direction: row;
     top: -61px;
     right: -15px;
+    position: relative;
 }
 
 #balancete ul {
     display: table;
     border-spacing: 13px;
-    width: 794px;
     top: -61px;
-    right: -15px;
 }
 
 #balancete li {
     background: red;
     margin: 5px;
-    width: 290px;
+    width: 234px;
     height: 128px;
     display: table-cell;
     padding: 15px;
@@ -268,18 +268,18 @@ body {
     flex-direction: row;
     top: -100px;
     right: -15px;
+
 }
 
 #balancete2 ul {
     display: table;
     border-spacing: 13px;
-    width: 794px;
 }
 
 #balancete2 li {
     background: red;
     margin: 5px;
-    width: 290px;
+    width: 234px;
     height: 128px;
     display: table-cell;
     padding: 15px;
@@ -288,19 +288,22 @@ body {
     box-shadow: 0 4px 2px -2px gray;
 }
 
-#grafico-balancete {
-    width: 470px;
+/*#grafico-balancete {
+    width: 474px;
     height: 276px;
-    margin-left: 773px;
+    margin-left: 809px;
     margin-top: -420px;
     background-color: red;
     border-radius: 1%;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 4px 2px -2px grey;
+    position: static;
+    padding: 0px 0px 0px 32px;
 }
 
 #grafico-balancete ul {
     display: table;
-    width: 794px;
+    width: 457px;
+
 }
 
 #grafico-balancete li {
@@ -311,7 +314,34 @@ body {
     padding: 15px;
     margin-left: 813px;
     margin-top: -404px;
-    background-color: red;
     border-radius: 1%;
     border: 20px;
+    margin-right: 20px;
+    box-sizing: border-box
+}*/
+
+#grafico-balancete {
+    background: transparent;
+    padding: 0px 0px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -455px;
+    margin-left: 741px;
+    position: relative;
+}
+#grafico-balancete ul {
+    display: table;
+    padding: 15px;
+    border-spacing: 20px;
+}
+#grafico-balancete li {
+    background: red;
+    margin: 5px;
+    width: 474px;
+    height: 276px;
+    display: table-cell;
+    padding: 15px;
+    list-style-position: inside;
+    border-radius: 2%;
+    box-shadow: 0 4px 2px -2px gray;
 }
