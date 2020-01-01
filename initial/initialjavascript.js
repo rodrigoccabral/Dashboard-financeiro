@@ -1,104 +1,4 @@
-//---------------Controle do piechart-----------------//
-
-/*google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-
-  var data = google.visualization.arrayToDataTable([
-    ['Task', 'Hours per Day'],
-    ['Work',     100],
-    ['Eat',      2],
-    ['Commute',  2],
-    ['Watch TV', 2],
-    ['Sleep',    7]
-  ]);
-
-  var options = {
-    title: 'My Daily Activities',
-    backgroundColor: { fill:'transparent' }
-  };
-
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-  chart.draw(data, options);
-}
-
-//---------------Controle do Columns chart-----------------//
-
-google.charts.load("current", {packages:['corechart']});
-google.charts.setOnLoadCallback(drawChart2);
-function drawChart2() {
-  var data = google.visualization.arrayToDataTable([
-    ["Element", "Density", { role: "style" } ],
-    ["Copper", 8.94, "#b87333"],
-    ["Silver", 10.49, "silver"],
-    ["Gold", 19.30, "gold"],
-    ["Platinum", 21.45, "color: #e5e4e2"]
-  ]);
-
-  var view = new google.visualization.DataView(data);
-  view.setColumns([0, 1,
-                   { calc: "stringify",
-                     sourceColumn: 1,
-                     type: "string",
-                     role: "annotation" },
-                   2]);
-
-  var options = {
-    title: "Density of Precious Metals, in g/cm^3",
-    width: 250,
-    height: 300,
-    bar: {groupWidth: "95%"},
-    legend: { position: "none" },
-    backgroundColor: { fill:'transparent' }
-
-  };
-  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-  chart.draw(view, options);
-}
-
-//---------------Controle do Lines chart-----------------//
-
-
-//---------------Carrossel---------------------//
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if(n < 1) {
-        slideIndex = slides.length;
-    }
-    for(var i = 0;i < slides.length;i++) {
-        slides[i].style.display = "none";
-    }
-    for(var i = 0;i < dots.length;i++) {
-        dots[i].className = dots[i].className.replace(" active", "")
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-
-}*/
-
-//-----------------Expandable sidebar--------------------//
-
+//-----------------SIDEBAR---------------------------//
 var mini = true;
 document.getElementById("myUL").style.visibility="hidden";   
 function toggleSidebar() {
@@ -120,12 +20,10 @@ function toggleSidebar() {
         this.mini = true;
     }
 }
+//-----------------FIM DO SIDEBAR------------------//
 
+//-----------------TREEVIEW DO SIDEBAR-------------//
 
-//------------CONVERSAO DE MOEDA TESTE-------------//
-
-
-//------------FIM DA CONVERSAO DE MOEDA TESTE------//
 
 var toggler = document.getElementsByClassName("caret");
 var i;
@@ -137,3 +35,18 @@ for (i = 0; i < toggler.length; i++) {
 
   });
 }
+//-----------------FIM DO TREEVIEW DO SIDEBAR-------//
+
+//------------CONVERSAO DE MOEDA--------------------//
+var jscontent = $.ajax( {
+  type: "GET",
+  dataType: "JSON",
+  url: "https://economia.awesomeapi.com.br/json/all",
+  success: function(data){
+    document.getElementById("currency_one").innerHTML = data.USD.code + " " + data.USD.high;
+    document.getElementById("currency_two").innerHTML = data.CAD.code + " " + data.CAD.high;
+    document.getElementById("currency_tree").innerHTML = data.EUR.code + " " + data.EUR.high;
+    document.getElementById("currency_four").innerHTML = data.AUD.code + " " + data.AUD.high;
+  }
+});
+//------------FIM DA CONVERSAO DE MOEDA------------//

@@ -130,6 +130,11 @@ body::-webkit-scrollbar-thumb:hover {
 
   /*----------------Fim do carrossel------------------*/
 
+  #over-sidebar {
+    position: fixed;
+    left: 0;
+  }
+
   /*----------------Expandable Sidebar---------------------------*/
  
   .sidebar {
@@ -152,6 +157,7 @@ body::-webkit-scrollbar-thumb:hover {
   /* Track */
   .sidebar::-webkit-scrollbar-track {
     background: rgb(109, 175, 184);
+    overflow-x: hidden;
   }
    
   /* Handle */
@@ -199,6 +205,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #header {
+    float: left;
     height: 64px;
     width: 101%;
     background-color: rgb(255, 255, 255);
@@ -265,17 +272,48 @@ body::-webkit-scrollbar-thumb:hover {
     border-spacing: 20px;
 }
 #dinheiro li {
-    background: red;
-    margin: 5px;
-    width: 290px;
-    height: 128px;
-    display: table-cell;
-    padding: 15px;
-    list-style-position: inside;
-    border-radius: 2%;
-    box-shadow: 0 4px 2px -2px gray;
+  background: red;
+  width: 290px;
+  height: 128px;
+  display: table-cell;
+  padding: 30px 17px 28px 108px;
+  list-style-position: inside;
+  border-radius: 2%;
+  box-shadow: 0 4px 2px -2px grey;
+  font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+  color: white;
+  font-size: 33px;
+  text-align: center;
 }
 
+#dolar {
+    width: 142px;
+    height: 114px;
+    margin-left: -226px;
+    font-size: 68px;
+    color: white;
+}
+#dolar-canadense {
+  width: 142px;
+  height: 114px;
+  margin-left: -226px;
+  font-size: 50px;
+  color: white;
+}
+#euro {
+  width: 142px;
+  height: 114px;
+  margin-left: -226px;
+  font-size: 68px;
+  color: white;
+}
+#dolar-australiano {
+  width: 142px;
+  height: 114px;
+  margin-left: -226px;
+  font-size: 50px;
+  color: white;
+}
 /*---------FIM DA CONVERSAO DE MOEDA----*/
 #grafico-longo {
     background: transparent;

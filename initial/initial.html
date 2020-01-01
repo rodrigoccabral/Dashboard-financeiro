@@ -9,11 +9,14 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
 </head>
 <body>
-
+    
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+
         <ul>
+            
             <ul id="myUL">
-                <li><button class="caret">Dashboards &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
+                
+                <li><button class="caret">Dashboards &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>     
                     <ul class="nested">
                         <li>Analytics</li>
                         <li>General</li>
@@ -51,16 +54,19 @@
         <br>
         <div id="dinheiro">
             <ul>
-                <li style="background-color: rgb(239, 83, 80);">a</li>
-                <li style="background-color: rgb(130, 177, 255);">b</li>
-                <li style="background-color: rgb(13, 71, 161);">c</li>
-                <li style="background-color: rgb(239, 83, 80);">d</li>
+                <li id="currency_one" style="background-color: rgb(239, 83, 80);"></li>
+                    <div id="dolar">&#36;</div>
+                <li id="currency_two" style="background-color: rgb(130, 177, 255);"></li>
+                    <div id="dolar-canadense">&#x43;&#36;</div>
+                <li id="currency_tree" style="background-color: rgb(13, 71, 161);"></li>
+                    <div id="euro">&#8364;</div>
+                <li id="currency_four" style="background-color: rgb(76, 175, 80);"></li>
+                    <div id="dolar-australiano">&#x41;&#36;</div>
             </ul>
         </div>
         
         
         <br>
-
             <div id="grafico-longo">
                 <ul>
                     <li>Gráfico longo</li>                   
@@ -88,7 +94,8 @@
                 </ul>
             </div>
 
-            <div id="header">
+            <div id="header">        
+                <div id="over-sidebar"><h1>Therodrigoc</h1></div>
                 <div id="avatar"></div>
                 <img id="header-bell" src="imagens2/bell.png" alt="bell">
                 <img id="header-letter" src="imagens2/letter.png" alt="letter">
@@ -102,51 +109,16 @@
 
 <!----------------FIM DA CONVERSAO DE MOEDA TESTE------------>
 
-
-           <!--Carrossel-
-    <div id="controle">
-           <div class="slideshow-container">
-
-            <div class="mySlides"> 
-                <div class="grafico" id="piechart"></div>
-            </div>
-
-            <div class="mySlides"> 
-                <div class="grafico" id="columnchart_values"></div>
-            </div>
-
-
-
-            Botão pra frente e pra trás
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            Pontos e circulos
-
-            <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-            
-            </div>
-        </div>
-   
-    </div>
--->
-
-
-    <!--<button id="forminitial">Back</button>
+    <button id="forminitial">Back</button>
     <script type="text/javascript">
         document.getElementById("forminitial").onclick = function () {
             location.href = "/index.html";
         };
-    </script>-->
+    </script>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="initialjavascript.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript" src="/initialjavascript.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
 
 
 </body>
