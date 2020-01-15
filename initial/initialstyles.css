@@ -216,7 +216,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: fixed;
     box-shadow: 0 4px 2px -2px gray;
 }
-#avatar {
+/*#avatar {
     height: 30px;
     width: 30px;
     border-radius: 25px;
@@ -225,7 +225,7 @@ body::-webkit-scrollbar-thumb:hover {
     top: 18px;
     position: fixed;
     cursor: pointer;
-}
+}*/
 #header-bell {
     height: 30px;
     width: 30px;
@@ -533,6 +533,39 @@ ul, #myUL {
   .active {
     display: block;
   }     
+
+  /*----------PROFILE PICTURE------------*/
+
+  #imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#avatar {
+    width: 42px;
+    height: 40px;
+    right: 69px;
+    top: 18px;
+    background-color: grey;
+    position: fixed;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#avatar img {
+    width: 42px;
+    height: 40px;
+}
 
 
 
