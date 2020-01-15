@@ -31,7 +31,6 @@ for (i = 0; i < toggler.length; i++) {
   toggler[i].addEventListener("click", function() {
     this.parentElement.querySelector(".nested").classList.toggle("active");
     this.classList.toggle("caret-down");
-   
 
   });
 }
@@ -59,11 +58,11 @@ $(function() {
           setTimeout(function(){count($this)}, 50);
       }
   }        
-$("#currency_one").each(function() {
+/*$("#currency_one").each(function() {
     $(this).data('count', parseInt($(this).html(), 10));
     $(this).html('0');
     count($(this));
-});
+});*/
 });
 
 

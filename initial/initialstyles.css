@@ -133,6 +133,9 @@ body::-webkit-scrollbar-thumb:hover {
   #over-sidebar {
     position: fixed;
     left: 0;
+    padding: 0px 0px 0px 0px;
+    margin: -16px 0px 0px 40px;
+    background-color: white;
   }
 
   /*----------------Expandable Sidebar---------------------------*/
