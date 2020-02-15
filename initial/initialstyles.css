@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100%;
     max-width: 98%;
-    background-color: white;
+    background-color: rgb(248, 244, 244);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -139,6 +139,9 @@ body::-webkit-scrollbar-thumb:hover {
   #over-sidebar {
     position: fixed;
     left: 0;
+    padding: 0px 0px 0px 0px;
+    margin: -16px 0px 0px 40px;
+    background-color: white;
   }
 
   /*----------------Expandable Sidebar---------------------------*/
@@ -219,7 +222,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: fixed;
     box-shadow: 0 4px 2px -2px gray;
 }
-#avatar {
+/*#avatar {
     height: 30px;
     width: 30px;
     border-radius: 25px;
@@ -228,7 +231,7 @@ body::-webkit-scrollbar-thumb:hover {
     top: 18px;
     position: fixed;
     cursor: pointer;
-}
+}*/
 #header-bell {
     height: 30px;
     width: 30px;
@@ -323,10 +326,10 @@ body::-webkit-scrollbar-thumb:hover {
 /*---------FIM DA CONVERSAO DE MOEDA----*/
 #grafico-longo {
     background: transparent;
-    padding: 0px 0px 0px 32px;
+    padding: 0px 0px 50px 32px;
     display: flex;
     flex-direction: row;
-    margin-top: -92px;
+    margin-top: -60px;
     position: relative;
 }
 #grafico-longo ul {
@@ -337,7 +340,6 @@ body::-webkit-scrollbar-thumb:hover {
 #grafico-longo li {
     height: 225px;
     width: 1215px;
-    background-color: red;
     margin: 5px;
     display: table-cell;
     padding: 15px;
@@ -537,3 +539,44 @@ ul, #myUL {
   .active {
     display: block;
   }     
+
+  /*----------PROFILE PICTURE------------*/
+
+  #imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#avatar {
+    width: 42px;
+    height: 40px;
+    right: 69px;
+    top: 18px;
+    background-color: grey;
+    position: fixed;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#avatar img {
+    width: 42px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+

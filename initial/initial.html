@@ -34,7 +34,7 @@
                             <li>Trash</li>
                             <li>Sent</li>                 
                         </ul>  
-                        <li class="icon-text"><button>GitHub</button></li>
+                        <li class="icon-text"><button onclick="window.open('https://github.com/rodrigoccabral')">GitHub</button></li>
                         <li class="icon-text"><button>Calendar</button></li>
                         <il><button class="caret">Layout &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
                             <ul class="nested">
@@ -70,13 +70,30 @@
         <br>
             <div id="grafico-longo">
                 <ul>
-                    <li>Gráfico longo</li>                   
+                    <li id="grafico-longo-li">
+                        <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>                     
+                    </li>                   
                 </ul>
             </div>
-
             <div id="balancete">
                 <ul>
-                    <li>a</li>
+                    <li>a
+
+                        <!--<div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/NASDAQ-TSLA/"><span class="blue-text">Cotações da TESLA</span></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                            "symbol": "NASDAQ:TSLA",
+                            "width": "100%",
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "locale": "br"
+                          }
+                            </script>
+                   
+                          </div>-->
+
+
+                    </li>
                     <li>b</li>
                     <li>c</li>
                 </ul>
@@ -91,35 +108,37 @@
 
             <div id="grafico-balancete">
                 <ul>
-                    <li>pora</li>
+                    <li><script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script></li>
                 </ul>
             </div>
 
             <div id="header">        
+                <button id="forminitial">Back</button>
+                <script type="text/javascript">
+                    document.getElementById("forminitial").onclick = function () {
+                        location.href = "/index.html";
+                    };
+                </script>
                 <div id="over-sidebar"><h1>Therodrigoc</h1></div>
-                <div id="avatar"></div>
+                <!--<div id="avatar"></div>-->
                 <img id="header-bell" src="imagens2/bell.png" alt="bell">
                 <img id="header-letter" src="imagens2/letter.png" alt="letter">
                 <img id="header-lingua" src="imagens2/lingua.jpg" alt="lingua">
             </div>
     </div>
 
-<!----------------CONVERSAO DE MOEDA TESTE------------------>
+<!--PROFILE PICTURE-->
+
+<div id="avatar">
+   <image id="profileImage" src="http://www.fillmurray.com/" onerror="this.parentNode.removeChild(this)"/>
+</div>
+<input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
 
 
-
-<!----------------FIM DA CONVERSAO DE MOEDA TESTE------------>
-
-    <button id="forminitial">Back</button>
-    <script type="text/javascript">
-        document.getElementById("forminitial").onclick = function () {
-            location.href = "/index.html";
-        };
-    </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="initialjavascript.js"></script>
-<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+
 
 
 </body>
