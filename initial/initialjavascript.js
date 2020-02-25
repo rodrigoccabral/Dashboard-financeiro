@@ -43,10 +43,10 @@ var jscontent = $.ajax( {
   url: "https://economia.awesomeapi.com.br/json/all",
   success: function(data){
 
-    document.getElementById("currency_one").innerHTML = data.USD.high.replace(".", ",");
-    document.getElementById("currency_two").innerHTML = data.CAD.high.replace(".", ",");
-    document.getElementById("currency_tree").innerHTML = data.EUR.high.replace(".", ",");
-    document.getElementById("currency_four").innerHTML = data.AUD.high.replace(".", ",");
+    document.getElementById("currency_one").innerHTML = "$ " + parseFloat(data.USD.high).toFixed(2).replace(".", ",");
+    document.getElementById("currency_two").innerHTML = "C$ " + parseFloat(data.CAD.high).toFixed(2).replace(".", ",");
+    document.getElementById("currency_tree").innerHTML = "€ " + parseFloat(data.EUR.high).toFixed(2).replace(".", ",");
+    document.getElementById("currency_four").innerHTML = "A$ " + parseFloat(data.AUD.high).toFixed(2).replace(".", ",");
   }
 });
 
@@ -103,7 +103,13 @@ function drawLogScales() {
           title: 'Ganhos e despesas',
           logScale: false
         },
-        colors: ['#36a360', '#bf0b2f']
+        colors: ['#36a360', '#bf0b2f'],
+        title: 'Patrimônio',
+        width: "500",
+        height: "378",
+        display: "table",
+        padding: "15px",
+
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('grafico-longo'));
@@ -129,6 +135,8 @@ function drawChart() {
   var options = {
     title: 'Patrimônio',
     pieHole: 0.4,
+    width: "500",
+    height: "378",
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('grafico-balancete'));
@@ -153,3 +161,12 @@ function fasterPreview( uploader ) {
 $("#imageUpload").change(function(){
   fasterPreview( this );
 });
+
+//-------INICIO DA FUNÇÃO DE VOLTA AO TOPO--//
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+//-------FIM DA FUNÇAO DE VOLTA AO TOPO-----//

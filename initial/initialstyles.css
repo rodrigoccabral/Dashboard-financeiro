@@ -3,27 +3,33 @@ body {
     padding: 0;
     height: 100%;
     max-width: 98%;
-    background-color: rgb(248, 244, 244);
+    background-color: rgb(233, 231, 231);
     -webkit-font-smoothing: antialiased;
+   
+
 }
 
 body::-webkit-scrollbar {
     width: 8px;
+
   }
   /* Track */
 body::-webkit-scrollbar-track {
-    background: rgb(202, 219, 221);
+    background: rgb(130, 135, 136);
+
   }
    
   /* Handle */
 body::-webkit-scrollbar-thumb {
-    background: rgb(155, 168, 172); 
+    background: rgb(74, 114, 126); 
     border-radius: 25px;
+   
   }
   
   /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
     background: #555; 
+ 
   }
 
 
@@ -31,12 +37,6 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     bottom: 10px;
     right: 10px;
-}
-
-#forminitial2 {
-  position: absolute;
-  top: 140px;
-  right: 5px;
 }
 #piechart {
     border-radius: 6%;
@@ -274,6 +274,7 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: row;
     margin-top: -25px;
     position: relative;
+
 }
 #dinheiro ul {
     display: table;
@@ -281,72 +282,28 @@ body::-webkit-scrollbar-thumb:hover {
     border-spacing: 20px;
 }
 #dinheiro li {
-  background: red;
-  width: 290px;
-  height: 128px;
-  display: table-cell;
-  padding: 30px 17px 28px 108px;
-  list-style-position: inside;
-  border-radius: 2%;
-  box-shadow: 0 4px 2px -2px grey;
-  font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
-  color: white;
-  font-size: 33px;
-  text-align: center;
+    width: 290px;
+    height: 128px;
+    display: table-cell;
+    padding-top: 40px;
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+    color: white;
+    font-size: 33px;
+    text-align: center;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#dolar {
-    width: 142px;
-    height: 114px;
-    margin-left: -226px;
-    font-size: 68px;
-    color: white;
-}
-#dolar-canadense {
-  width: 142px;
-  height: 114px;
-  margin-left: -226px;
-  font-size: 50px;
-  color: white;
-}
-#euro {
-  width: 142px;
-  height: 114px;
-  margin-left: -226px;
-  font-size: 68px;
-  color: white;
-}
-#dolar-australiano {
-  width: 142px;
-  height: 114px;
-  margin-left: -226px;
-  font-size: 50px;
-  color: white;
-}
 /*---------FIM DA CONVERSAO DE MOEDA----*/
+#grafico-balancete {
+  padding: 0px 0px 0px 0px;
+  margin-top: -378px;
+  margin-left: 100px;
+}
 #grafico-longo {
-    background: transparent;
-    padding: 0px 0px 50px 32px;
-    display: flex;
-    flex-direction: row;
-    margin-top: -60px;
-    position: relative;
-}
-#grafico-longo ul {
-    display: table;
-    padding: 15px;
-    border-spacing: 20px;
-}
-#grafico-longo li {
-    height: 225px;
-    width: 1215px;
-    margin: 5px;
-    display: table-cell;
-    padding: 15px;
-    list-style-position: inside;
-    border-spacing: 20px;
-    border-radius: .8%;
-    box-shadow: 0 4px 2px -2px gray;
+  margin-left: 645px;
+  
 }
 
 /*------------Div balancete--------------*/
@@ -359,13 +316,11 @@ body::-webkit-scrollbar-thumb:hover {
     right: -15px;
     position: relative;
 }
-
 #balancete ul {
     display: table;
     border-spacing: 13px;
     top: -61px;
 }
-
 #balancete li {
     background: red;
     margin: 5px;
@@ -377,7 +332,6 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 2%;
     box-shadow: 0 4px 2px -2px gray;
 }
-
 #balancete2 {
     position: relative;
     display: flex;
@@ -386,12 +340,10 @@ body::-webkit-scrollbar-thumb:hover {
     right: -15px;
 
 }
-
 #balancete2 ul {
     display: table;
     border-spacing: 13px;
 }
-
 #balancete2 li {
     background: red;
     margin: 5px;
@@ -404,63 +356,7 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 4px 2px -2px gray;
 }
 
-/*#grafico-balancete {
-    width: 474px;
-    height: 276px;
-    margin-left: 809px;
-    margin-top: -420px;
-    background-color: red;
-    border-radius: 1%;
-    box-shadow: 0 4px 2px -2px grey;
-    position: static;
-    padding: 0px 0px 0px 32px;
-}
 
-#grafico-balancete ul {
-    display: table;
-    width: 457px;
-
-}
-
-#grafico-balancete li {
-    display: table-cell;
-    width: 470px;
-    height: 276px;
-    list-style-position: inside;
-    padding: 15px;
-    margin-left: 813px;
-    margin-top: -404px;
-    border-radius: 1%;
-    border: 20px;
-    margin-right: 20px;
-    box-sizing: border-box
-}*/
-
-#grafico-balancete {
-    background: transparent;
-    padding: 0px 0px 0px 32px;
-    display: flex;
-    flex-direction: row;
-    margin-top: -455px;
-    margin-left: 741px;
-    position: relative;
-}
-#grafico-balancete ul {
-    display: table;
-    padding: 15px;
-    border-spacing: 20px;
-}
-#grafico-balancete li {
-    background: red;
-    margin: 5px;
-    width: 474px;
-    height: 276px;
-    display: table-cell;
-    padding: 15px;
-    list-style-position: inside;
-    border-radius: 2%;
-    box-shadow: 0 4px 2px -2px gray;
-}
 
 
 
@@ -573,10 +469,82 @@ ul, #myUL {
     height: 40px;
 }
 
+#ola-dropdown {
+    width: 215px;
+    height: 208px;
+    margin-top: 60px;
+    position: fixed;
+    right: 52px;
+    background-color: white;
+    display: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#ola-dropdown:before {
+  content: ' ';
+  position: fixed;
+  top: 61px;
+  right: 80px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  border: 10px solid transparent;
+  border-right-color: white;
+}
+#avatar:hover #ola-dropdown {
+  display: block;
+  z-index: 20;
+}
+#ola-dropdown-content {
+  padding: 25px 0px 0px 70px;
+  z-index: 20;
+}
+#ola-dropdown-texto {
+  padding-left: 30px;
+  color: black;
+  z-index: 20;
+}
 
 
 
 
+.rodape{
+  background-color: rgb(35, 47, 61);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.texto-rodape{
+  text-decoration:none;
+  color: rgb(170, 159, 159);
+}
+
+#art-1 {
+  text-align: justify;
+  margin-top: 70px;
+  margin-left: 270px;
+}
+#art-2 {
+  text-align: justify;
+  margin-top: -85px;
+  margin-left: 640px;
+}
+#art-3 {
+  text-align: justify;
+  margin-top: -85px;
+  margin-left: 1040px;
+}
 
 
-
+#div-btn {
+  position: absolute;
+  width: 100%;
+  margin-top: -30px;
+  background-color: rgb(19, 26, 34);
+}
+#div-btn:hover {
+  background-color: rgb(24, 17, 17);
+}
