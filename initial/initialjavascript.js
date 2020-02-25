@@ -109,7 +109,6 @@ function drawLogScales() {
         height: "378",
         display: "table",
         padding: "15px",
-
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('grafico-longo'));
