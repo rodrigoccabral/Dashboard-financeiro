@@ -11,11 +11,21 @@ form.addEventListener("submit", (e) => {
     let messages = [];
 
     if (emailRegEx.test(email.value) === false) {
-        messages.push("Wrong email");
+        //messages.push("Wrong email");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: "Email ou senha incorretos!",
+          })
     }
     
     if (passwordRegEx.test(password.value) === false) {
-        messages.push("Wrong password");
+        messages.push("");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: "Email ou senha incorretos!",
+          })
     }
     
     if (messages.length > 0) {

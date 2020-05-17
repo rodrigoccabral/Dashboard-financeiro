@@ -290,12 +290,13 @@ body::-webkit-scrollbar-thumb:hover {
     display: table-cell;
     padding-top: 40px;
     font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
-    color: white;
+    color: rgb(12, 9, 9);
     font-size: 33px;
     text-align: center;
     -moz-border-radius: 5px;
     border-radius: 5px;
     box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgb(255, 255, 255);
 }
 
 /*---------FIM DA CONVERSAO DE MOEDA----*/
