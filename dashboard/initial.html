@@ -9,23 +9,21 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
 </head>
 <body>
-    
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-
         <ul>
-            
+         
             <ul id="myUL">
+           
+                <div id="usuario">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                    <h1 id="nome-usuario">Nome do usuário</h1>
+                </div>
                 
                 <li><button class="caret">Dashboards &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>     
                     <ul class="nested">
                         <li>Analytics</li>
                         <li>General</li>
-                        <li>Sales</li>
-                        <li>Classic</li>
-                        <li>Server</li>
-                        <li>Social</li>
-                        <li>Widgets</li>
-                        <li>Draggable</li>                   
+                        <li>Sales</li>                  
                     </ul>      
 
                      <il><button class="caret">Email &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
@@ -36,14 +34,11 @@
                         </ul>  
                         <li class="icon-text"><button onclick="window.open('https://github.com/rodrigoccabral')">GitHub</button></li>
                         <li class="icon-text"><button>Calendar</button></li>
-                        <il><button class="caret">Layout &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
+                        <il><button class="caret">Configurações &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#43;</button>
                             <ul class="nested">
                                 <li>Standard Page</li>
                                 <li>Non Scrolling Page</li>
-                                <li>Full Width Layout</li>   
-                                <li>Icon Menu</li>  
-                                <li>Tall Toolbar with background</li>
-                                <li>Composer</li>                  
+                                <li>Full Width Layout</li>                   
                             </ul> 
         </ul>
     </div>
@@ -54,13 +49,13 @@
         <br>
         <div id="dinheiro">
             <ul>
-                <li id="currency_one"><h id="total"></h>  questões resolvidas</li>
+                <li class="bloco-questoes"><h id="total"></h>  questões resolvidas</li>
       
-                <li id="currency_two"><h id="acertos">15</h> respostas corretas</li>
+                <li class="bloco-questoes"><h id="acertos">15</h> respostas corretas</li>
            
-                <li id="currency_tree"><h id="erros">15</h> respostas erradas</li>
+                <li class="bloco-questoes"><h id="erros">15</h> respostas erradas</li>
           
-                <li id="currency_four">Teste</li>
+                <li class="bloco-questoes">Teste</li>
    
             </ul>
         </div>
@@ -119,24 +114,13 @@
             <div id="header">        
                 <button id="forminitial">Back</button>
                 <script type="text/javascript">
-                    document.getElementById("forminitial").onclick = function () {
-                        location.href = "/index.html";
+                    document.getElementById("forminitial").onclick = function () { 
+                        location.href = "../login/index.html"
                     };
                 </script>
-                <div id="over-sidebar"><h1>Therodrigoc</h1></div>
-                <!--<div id="avatar"></div>-->
-                <img id="header-bell" src="imagens2/bell.png" alt="bell">
-                <img id="header-letter" src="imagens2/letter.png" alt="letter">
-                <img id="header-lingua" src="imagens2/lingua.jpg" alt="lingua">
             </div>
     </div>
 
-<!--PROFILE PICTURE-->
-
-<div id="avatar">
-   <image id="profileImage" src="http://www.fillmurray.com/" onerror="this.parentNode.removeChild(this)"/>
-
-<input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
 <div id="ola-dropdown">
     <div id="ola-dropdown-content">
         <button id="btn-login">Fazer login</button>

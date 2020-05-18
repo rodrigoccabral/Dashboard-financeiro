@@ -14,7 +14,7 @@ body {
 #formulario {
     border-radius: 6%;
     top: 134px;
-    right: 510px;
+    right: 555px;
     width: 310px;
     height: 380px;
     position: absolute;
@@ -75,3 +75,4 @@ input:focus {
     outline-width: 0;
     background-color: white;
 }
+

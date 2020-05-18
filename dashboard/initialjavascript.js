@@ -12,6 +12,7 @@ function toggleSidebar() {
 
         this.mini = false;
     } else {
+
         console.log("closing sidebar");
         document.getElementById("mySidebar").style.width = "50px";
         document.getElementById("container-tela").style.marginLeft = "0px";
@@ -137,23 +138,6 @@ function drawChart() {
 }
 
 //------------FIM DO GRÁFICO DE RENDIMENTO-------------//
-
-//-------------PROFILE PICTURE--------------------//
-
-$("#profileImage").click(function(e) {
-  $("#imageUpload").click();
-});
-
-function fasterPreview( uploader ) {
-  if ( uploader.files && uploader.files[0] ){
-        $('#profileImage').attr('src', 
-           window.URL.createObjectURL(uploader.files[0]) );
-  }
-}
-
-$("#imageUpload").change(function(){
-  fasterPreview( this );
-});
 
 //-------INICIO DA FUNÇÃO DE VOLTA AO TOPO--//
 
