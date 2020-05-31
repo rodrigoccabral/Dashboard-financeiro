@@ -6,15 +6,16 @@ function toggleSidebar() {
     if (mini) {
       
         console.log("opening sidebar");
-        document.getElementById("mySidebar").style.width = "252px";
-        document.getElementById("container-tela").style.marginLeft = "210px";   
-        document.getElementById("myUL").style.visibility="visible";    
+        //document.getElementById("mySidebar").style.width = "252px";
+        document.getElementById("mySidebar").style.width = "210px";
+        document.getElementById("container-tela").style.marginLeft = "210px";
+        document.getElementById("myUL").style.visibility="visible";
 
         this.mini = false;
     } else {
 
         console.log("closing sidebar");
-        document.getElementById("mySidebar").style.width = "50px";
+        document.getElementById("mySidebar").style.width = "60px";
         document.getElementById("container-tela").style.marginLeft = "0px";
         document.getElementById("myUL").style.visibility="hidden";
 
@@ -36,38 +37,6 @@ for (i = 0; i < toggler.length; i++) {
   });
 }
 //-----------------FIM DO TREEVIEW DO SIDEBAR-------//
-
-//------------CONVERSAO DE MOEDA--------------------//
-/*var jscontent = $.ajax( {
-  type: "GET",
-  dataType: "JSON",
-  url: "https://economia.awesomeapi.com.br/json/all",
-  success: function(data){
-
-    document.getElementById("currency_one").innerHTML = "$ " + parseFloat(data.USD.high).toFixed(2).replace(".", ",");
-    document.getElementById("currency_two").innerHTML = "C$ " + parseFloat(data.CAD.high).toFixed(2).replace(".", ",");
-    document.getElementById("currency_tree").innerHTML = "€ " + parseFloat(data.EUR.high).toFixed(2).replace(".", ",");
-    document.getElementById("currency_four").innerHTML = "A$ " + parseFloat(data.AUD.high).toFixed(2).replace(".", ",");
-  }
-});
-
-$(function() {
-  function count($this){
-      var current = parseInt($this.html(), 10);
-      $this.html(++current);
-      if(current !== $this.data('count')){
-          setTimeout(function(){count($this)}, 50);
-      }
-  }        
-/*$("#currency_one").each(function() {
-    $(this).data('count', parseInt($(this).html(), 10));
-    $(this).html('0');
-    count($(this));
-});
-});*/
-
-
-//------------FIM DA CONVERSAO DE MOEDA------------//
 
 //------------GRÁFICO LONGO------------------------//
 google.charts.load('current', {packages: ['corechart', 'line']});

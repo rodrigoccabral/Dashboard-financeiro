@@ -1,10 +1,7 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    max-width: 98%;
-    background-color: rgb(233, 231, 231);
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  background-color: rgb(233, 231, 231);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -136,16 +133,17 @@ body::-webkit-scrollbar-thumb:hover {
  
   .sidebar {
     height: 144%;
-    width: 50px;
     position: absolute;
     top: 66px;
     bottom: 0;
+    width: 60px;
     left: 0;
     background-color: rgb(0,188,212);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     white-space: nowrap;
+    z-index: 10;
 }
 .sidebar::-webkit-scrollbar {
     width: 8px;
@@ -221,22 +219,13 @@ body::-webkit-scrollbar-thumb:hover {
 /*---------CONVERSAO DE MOEDA-----------*/
 
 #dinheiro {
-  background: transparent;
-  padding: 0px 0px 0px 32px;
-  display: flex;
-  flex-direction: row;
-  margin-top: -25px;
   position: relative;
-  left: 20px;
+  margin-left: 95px;
 
 }
 #dinheiro ul {
-    display: table;
-    padding: 15px;
-    flex: 1 1 auto;
-    width: 100%;
-    min-width: 0;
-    border-spacing: 20px;
+  padding: 15px;
+  border-spacing: 20px;
 }
 #dinheiro li {
     width: 290px;
@@ -254,18 +243,31 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /*---------FIM DA CONVERSAO DE MOEDA----*/
+#grafico-background {
+  right: 121px;
+  left: 258px;
+  position: absolute;
+  height: 435px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 18px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dois-graficos {
+  position: absolute;
+  left: 170px;
+  top: 315px;
+  z-index: 100;
+}
+
 #grafico-balancete {
   padding: 0px 0px 0px 0px;
   margin-top: -378px;
   margin-left: 100px;
 }
+
 #grafico-longo {
-  margin-left: 645px;
-}
-#dois-graficos {
-  flex: 1 1 auto;
-  width: 100%;
-  min-width: 0;
+  margin-left: 617px;
 }
 
 /*------------Div balancete--------------*/
@@ -465,9 +467,11 @@ ul, #myUL {
 .rodape{
   background-color: rgb(35, 47, 61);
   position: absolute;
-  width: 100%;
+  width: 97%;
   display: flex;
   flex-direction: column;
+  left: 50px;
+  bottom: -348px;
 }
 .texto-rodape{
   text-decoration:none;
@@ -476,7 +480,7 @@ ul, #myUL {
 
 #art-1 {
   text-align: justify;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-left: 270px;
   color: rgb(170, 159, 159);
 }
@@ -517,7 +521,7 @@ ul, #myUL {
   width: 100px;
   height: 100px;
   top: 30px;
-  left: 70px;
+  left: 55px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -525,7 +529,7 @@ ul, #myUL {
 #nome-usuario {
   position: absolute;
   top: 125px;
-  left: 35px;
+  left: 20px;
   font-size: 20px;
   font-family: MontSerrat,Tahoma,Arial,sans-serif;
   color: white;
